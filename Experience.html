@@ -1,0 +1,139 @@
+<html>
+
+<h1><u>Experiences</u></h1>
+<head>
+ 
+    <style>
+        .modal {
+            background-color: #FFB6C1;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        body{
+    background-color:pink;
+}
+
+button {
+  background-color: #aa0481; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 14px 12px;
+  cursor: pointer;
+}
+button {
+    
+    border-radius: 12px;
+}
+h1{
+color:#d44b8e;
+
+}
+p{
+color:#d44b8e;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+
+<button onclick="openModal()">LexisNexis</button>
+
+
+<div id="myModal" class="overlay">
+    <div class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <p>Software Engineer Intern<br>
+            
+            
+           Attending Standup meetings. Fixing the bugs and user stories 
+            assigned to me. Working with designers to code the clients or 
+            Micro front end using Angular ,HTML,CSS. Investigating and 
+            resolving bugs. Assist in writing and executing test cases to 
+            ensure the quality and reliability of the software. Working on 
+            identifying and fixing bugs found during testing. Attend 
+            training sessions and presentation in order to discuss about 
+            the sprints. Participate in code reviews, both as a reviewer 
+            and as someone whose code is being reviewed. Engage in 
+            pair programming sessions with my team members and our 
+            lead to upskill. Coding new features to enhance the 
+            performance of Software.</p>
+    </div>
+</div>
+
+<script>
+  
+    function openModal() {
+        document.getElementById('myModal').style.display = 'flex';
+    }
+
+   
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+  
+    window.onclick = function (event) {
+        if (event.target === document.getElementById('myModal')) {
+            closeModal();
+        }
+    };
+</script>
+
+
+<button onclick="openModal()">Capaciti Tech</button>
+
+
+<div id="myModal" class="overlay">
+    <div class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <p>Data Support Technician Intern
+            <br>
+            
+            
+            Effectively resolving customer tickets through Zendesk. Fixing 
+            Data Problems. Managing the database using SQL.</p>
+    </div>
+</div>
+
+<script>
+  
+    function openModal() {
+        document.getElementById('myModal').style.display = 'flex';
+    }
+
+   
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+  
+    window.onclick = function (event) {
+        if (event.target === document.getElementById('myModal')) {
+            closeModal();
+        }
+    };
+</script>
+
+</body>
+</html>
+
+

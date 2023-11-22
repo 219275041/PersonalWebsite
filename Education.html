@@ -1,0 +1,119 @@
+<html>
+
+<h1><u>Education</u></h1>
+<head>
+ 
+    <style>
+        .modal {
+            background-color: #FFB6C1;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        body{
+    background-color:pink;
+}
+
+button {
+  background-color: #aa0481; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 14px 12px;
+  cursor: pointer;
+}
+button {
+    
+    border-radius: 12px;
+}
+h1{
+color:#d44b8e;
+
+}
+p{
+color:#d44b8e;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+
+
+<button onclick="openModal()">Leiden High School</button>
+
+
+<div id="myModal" class="overlay">
+    <div class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <p>National Senior Certificate: Bachelors Degree with distiction</p>
+    </div>
+</div>
+
+<script>
+  
+    function openModal() {
+        document.getElementById('myModal').style.display = 'flex';
+    }
+
+   
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+  
+    window.onclick = function (event) {
+        if (event.target === document.getElementById('myModal')) {
+            closeModal();
+        }
+    };
+</script>
+
+
+<button onclick="openModal()">Cape Peninsula University Of Technology</button>
+
+
+<div id="myModal" class="overlay">
+    <div class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <p>Diploma In Information and Communications Technology majoring in Applications Development</p>
+    </div>
+</div>
+
+<script>
+  
+    function openModal() {
+        document.getElementById('myModal').style.display = 'flex';
+    }
+
+   
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+  
+    window.onclick = function (event) {
+        if (event.target === document.getElementById('myModal')) {
+            closeModal();
+        }
+    };
+</script>
+
+</body>
+</html>
